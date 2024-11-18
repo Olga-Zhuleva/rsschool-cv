@@ -1,0 +1,17 @@
+html,
+body {
+	font-family: var(--font-family);
+	color: var(--dark);
+	font-size: 16px;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.container {
+	width: 1276px;
+	margin: 0 auto;
+}
+
+.wrapper {
+    overflow: hidden;
+}
