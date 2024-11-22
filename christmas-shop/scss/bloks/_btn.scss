@@ -1,0 +1,23 @@
+.btn {
+    display: inline-block;
+    padding: 20px 32px;
+    height: 56px;
+    vertical-align: middle;
+    background: var(--dark);
+    border-radius: 20px;
+    text-decoration: none;
+    
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--static-white);
+    cursor: pointer;
+    border: none;
+
+    &:hover {
+        background-color: var(--static-white);
+        color: var(--dark);
+        transition: 0.5s;
+    }
+}
