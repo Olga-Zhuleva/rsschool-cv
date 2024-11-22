@@ -211,3 +211,16 @@ Add the correct display in Chrome and Safari.
 summary {
 	display: list-item;
 }
+
+p, h1, h2 {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	padding-left: 0;
+}

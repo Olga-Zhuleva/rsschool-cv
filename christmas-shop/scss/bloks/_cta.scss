@@ -1,0 +1,64 @@
+.cta {
+    padding: 120px 0;
+    background-image: url("../img/bg-forest.png"), url("../img/bg-snow.png");
+    background-size: cover, cover;
+    background-position: center, center;
+    background-repeat: no-repeat, repeat;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;       
+    }
+
+    &__title {
+        padding: 45px 0 20px 0;
+    }
+
+    &__btn {
+        margin-bottom: 20px;
+    }
+
+    &__counter-wrapper {
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        align-items: center;
+    }
+
+    &__counter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        padding: 8px 12px 12px 12px;
+        width: 344px;
+        height: 72px;
+        background: var(--static-white-40);
+    }
+
+    .counter__item {
+        position: relative;
+        width: 80px;
+        height: 52px;
+
+        &:not(:last-child)::before {
+            content: ""; 
+            position: absolute;
+            width: 20px;
+            height: 0px;
+            transform: rotate(90deg);
+            border: 1px solid var(--static-white-40);       
+            top: 50%;
+            left: 87%;
+        }
+    }
+    .counter__item-value {
+        padding-bottom: 0;
+    }
+    .counter__item-name {
+        text-align: center;
+        color: var(--static-white);
+    }
+}
