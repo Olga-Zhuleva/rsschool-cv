@@ -189,6 +189,8 @@ a {
 
 ul {
   padding-left: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 :root {
@@ -247,7 +249,7 @@ h1 {
   margin: 0;
   max-width: 426px;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 150%;
   letter-spacing: 0.18em;
   text-align: center;
@@ -290,6 +292,40 @@ h4 {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.selected-header {
+  border-radius: 12px;
+  padding: 12px 20px;
+  background: var(--primary-10);
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.selected-tab {
+  border-radius: 12px;
+  padding: 12px 20px;
+  width: 65px;
+  height: 40px;
+  background: var(--static-white-20);
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--static-white);
+}
+
+.for-work {
+  color: var(--tag-purple);
+}
+
+.for-health {
+  color: var(--tag-green);
+}
+
+.for-harmony {
+  color: var(--tag-pink);
 }
 
 .gifts, .slider, .about, .hero::after {
@@ -340,7 +376,6 @@ h4 {
 }
 .header .nav__item {
   padding: 12px 20px;
-  list-style-type: none;
   cursor: pointer;
 }
 .header .nav__item:hover {
@@ -528,9 +563,9 @@ h4 {
 }
 .gifts__cards {
   display: flex;
+  flex-wrap: wrap;
   padding-left: 0;
-  -moz-column-gap: 12px;
-       column-gap: 12px;
+  gap: 12px;
 }
 .gifts__cards-item {
   display: flex;
@@ -558,15 +593,6 @@ h4 {
   padding: 20px;
   border-radius: 20px;
   background: var(--static-white);
-}
-.gifts .for-work {
-  color: var(--tag-purple);
-}
-.gifts .for-health {
-  color: var(--tag-green);
-}
-.gifts .for-harmony {
-  color: var(--tag-pink);
 }
 
 .cta {
@@ -627,6 +653,42 @@ h4 {
   color: var(--static-white);
 }
 
+.gifts-page {
+  padding: 60px 0;
+  background-image: url("../img/bg-garland.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  width: 100%;
+  height: 100%;
+}
+.gifts-page__body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+}
+.gifts-page__tabs {
+  display: flex;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  align-items: center;
+}
+.gifts-page__tab {
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--static-white);
+  cursor: pointer;
+}
+.gifts-page__tab:hover {
+  background: var(--static-white-20);
+}
+.gifts-page .gifts__cards {
+  flex-wrap: wrap;
+}
 .footer {
   padding: 60px 0;
   background-color: var(--static-white);

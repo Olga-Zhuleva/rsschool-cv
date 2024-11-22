@@ -1,0 +1,51 @@
+.gifts-page {
+    padding: 60px 0;
+
+    background-image: url("../img/bg-garland.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    width: 100%;
+    height: 100%;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+    }
+
+    &__tabs {
+        display: flex;
+        column-gap: 8px;
+        align-items: center;
+    }
+    &__tab {
+        border-radius: 12px;
+        padding: 12px 20px;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--static-white);
+        cursor: pointer;
+
+        &:hover {
+            background: var(--static-white-20);
+        }
+    }
+    .gifts__cards {
+        flex-wrap: wrap;
+    }
+    .gifts__cards-item {
+    }
+    .gifts__cards-info {
+    }
+    .for-work {
+    }
+    .for-health {
+    }
+    .for-harmony {
+    }
+    .limit {
+    }
+}

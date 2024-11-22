@@ -15,8 +15,9 @@
 
     &__cards {
         display: flex;
+        flex-wrap: wrap;
         padding-left: 0;
-        column-gap: 12px;
+        gap: 12px;
     }
 
     &__cards-item {
@@ -50,15 +51,4 @@
         background: var(--static-white);
     }
 
-    .for-work {
-        color: var(--tag-purple);
-    }
-
-    .for-health {
-        color: var(--tag-green);
-    }
-
-    .for-harmony {
-        color: var(--tag-pink);
-    }
 }
