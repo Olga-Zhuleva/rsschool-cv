@@ -312,8 +312,6 @@ h4 {
 .selected-tab {
   border-radius: 12px;
   padding: 12px 20px;
-  width: 65px;
-  height: 40px;
   background: var(--static-white-20);
   font-size: 12px;
   letter-spacing: 0.05em;
@@ -744,7 +742,7 @@ h4 {
 .gifts-page__body {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 18px;
   align-items: center;
 }
 .gifts-page__tabs {
@@ -768,6 +766,17 @@ h4 {
 .gifts-page .gifts__cards {
   flex-wrap: wrap;
 }
+
+@media (max-width: 425px) {
+  .gifts-page__tabs {
+    -moz-column-gap: 0;
+         column-gap: 0;
+    text-align: center;
+  }
+  .gifts-page__tab {
+    padding: 12px 8px;
+  }
+}
 .footer {
   padding: 60px 0;
   background-color: var(--static-white);
@@ -782,7 +791,7 @@ h4 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(378px, 1fr));
   gap: 12px;
-  margin-bottom: 48px;
+  margin-bottom: 55px;
   width: 100%;
 }
 .footer__contacts-item {
@@ -824,6 +833,10 @@ h4 {
 .footer__social a {
   width: 40px;
   height: 40px;
+}
+.footer__social-area {
+  display: block;
+  text-align: center;
 }
 .footer__social-area:hover svg path {
   stroke: var(--primary);

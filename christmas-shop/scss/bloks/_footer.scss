@@ -12,7 +12,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(378px, 1fr));
         gap: 12px;
-        margin-bottom: 48px;
+        margin-bottom: 55px;
         width: 100%;
     }
 
@@ -61,6 +61,11 @@
             width: 40px;
             height: 40px;
         }
+    }
+
+    &__social-area {
+        display: block;
+        text-align: center;
     }
 
     &__social-area:hover svg path {
