@@ -10,8 +10,8 @@
     }
     &__contacts {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(378px, 1fr));
+        gap: 12px;
         margin-bottom: 48px;
         width: 100%;
     }
