@@ -16,6 +16,7 @@
     &__cards {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         padding-left: 0;
         gap: 12px;
     }

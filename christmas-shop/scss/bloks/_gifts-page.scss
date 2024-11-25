@@ -11,7 +11,7 @@
     &__body {
         display: flex;
         flex-direction: column;
-        row-gap: 20px;
+        row-gap: 18px;
         align-items: center;
     }
 
@@ -36,16 +36,18 @@
     .gifts__cards {
         flex-wrap: wrap;
     }
-    .gifts__cards-item {
-    }
-    .gifts__cards-info {
-    }
-    .for-work {
-    }
-    .for-health {
-    }
-    .for-harmony {
-    }
-    .limit {
+
+}
+
+@media (max-width: 425px) {
+    .gifts-page {
+        &__tabs {
+            column-gap: 0;
+            text-align: center;
+        }
+
+        &__tab {
+            padding: 12px 8px;
+        }
     }
 }
