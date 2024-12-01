@@ -58,9 +58,11 @@
         transform: rotate(180deg);
     }
 
-    .btn-prev:hover,
-    .btn-next:hover {
-        background-color: var(--static-white);
-        cursor: pointer;
+    @media (hover: hover) {
+        .btn-prev:hover,
+        .btn-next:hover {
+            background-color: var(--static-white);
+            cursor: pointer;
+        }
     }
 }
