@@ -32,14 +32,18 @@
         }
     }
 
-    &__contacts-item:hover a {
-        color: var(--primary);
-        transition: 0.5s;
+    @media (hover: hover) {
+        &__contacts-item:hover a {
+            color: var(--primary);
+            transition: 0.5s;
+        }
     }
 
-    &__contacts-item:hover h3 {
-        color: var(--primary);
-        transition: 0.5s;
+    @media (hover: hover) {
+        &__contacts-item:hover h3 {
+            color: var(--primary);
+            transition: 0.5s;
+        }
     }
 
     &__contacts-text {
@@ -69,7 +73,7 @@
     }
 
     &__social-area:hover svg path {
-       stroke: var(--primary);
+        stroke: var(--primary);
     }
 
     &__sub-title {
