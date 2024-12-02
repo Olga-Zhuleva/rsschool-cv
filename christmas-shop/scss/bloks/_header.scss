@@ -16,15 +16,17 @@
         padding: 12px 20px;
         cursor: pointer;
 
-        &:hover {
-            border-radius: 12px;
-            background: var(--primary-10);
-            transition: 0.5s;
-        }
+        @media (hover: hover) {
+            &:hover {
+                border-radius: 12px;
+                background: var(--primary-10);
+                transition: 0.5s;
+            }
 
-        &:hover .nav__link {
-            color: var(--primary);
-            transition: 0.5s;
+            &:hover .nav__link {
+                color: var(--primary);
+                transition: 0.5s;
+            }
         }
     }
     .nav__link {
@@ -44,7 +46,7 @@
 
         &::before,
         &::after {
-            content: '';
+            content: "";
             position: relative;
             display: block;
             width: 20px;
@@ -54,13 +56,13 @@
         }
 
         &::before {
-            content: '';
+            content: "";
             top: 16px;
             left: 25%;
         }
 
         &::after {
-            content: '';
+            content: "";
             top: 22px;
             left: 25%;
         }
@@ -77,5 +79,4 @@
     .nav {
         display: none;
     }
-
 }
