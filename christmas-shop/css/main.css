@@ -891,6 +891,7 @@ h4 {
   border: none;
   margin: 0;
   background-color: var(--static-white);
+  display: none;
 }
 .mobile-overlay.active-menu {
   display: flex;
