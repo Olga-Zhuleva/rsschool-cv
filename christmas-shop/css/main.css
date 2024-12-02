@@ -331,6 +331,10 @@ h4 {
   color: var(--tag-pink);
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .gifts, .slider, .about, .hero::after {
   background-image: url("../img/bg-snow.png");
   background-repeat: repeat;
@@ -419,21 +423,39 @@ h4 {
 }
 .header__burger::before {
   content: "";
-  top: 16px;
+  top: -3px;
   left: 25%;
 }
 .header__burger::after {
   content: "";
-  top: 22px;
+  top: 3px;
   left: 25%;
 }
 
 @media (max-width: 768px) {
+  .header {
+    z-index: 15;
+    position: relative;
+  }
   .header__burger {
     display: block;
+    padding: 0;
+    background: transparent;
   }
   .nav {
     display: none;
+  }
+  .active.header__burger::before {
+    top: 1px;
+    left: 24%;
+    transform: rotate(45deg);
+    transition: 0.5s;
+  }
+  .active.header__burger::after {
+    top: -1px;
+    left: 24%;
+    transform: rotate(-45deg);
+    transition: 0.5s;
   }
 }
 .logo {
@@ -860,4 +882,39 @@ h4 {
 }
 .footer__sub-title:hover {
   color: var(--primary);
+}
+
+.mobile-overlay {
+  width: 100%;
+  height: 100%;
+  right: -100%;
+  border: none;
+  margin: 0;
+  background-color: var(--static-white);
+}
+.mobile-overlay.active-menu {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0%;
+  z-index: 10;
+  transition: 0.5s;
+}
+.mobile-overlay .mobile-overlay__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+}
+.mobile-overlay .mobile-overlay__link {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 152%;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--dark);
 }/*# sourceMappingURL=main.css.map */
